@@ -1,11 +1,10 @@
-﻿using course_alx.lessons;
-using course_alx.Lessons;
-using course_alx.Lessons.Classes;
+﻿using AFALXCourse.Lessons.L2;
 
-//L1ObjectVariables.Test2();
+Console.WriteLine("-------------------------");
+Console.Write("Bartosz Doliński\n");
+Console.WriteLine("ALX Course");
+Console.WriteLine("-------------------------");
 
-//L1SimpleVariables.Test();
-//L1Strings.Test();
-//
-//L1Strings.ConcatenationTest();
-L1Constructors.Test();
+L2EnumsAndSwitch.Run();
+
+Console.WriteLine("-------------------------");
