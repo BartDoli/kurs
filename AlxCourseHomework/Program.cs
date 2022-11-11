@@ -1,4 +1,20 @@
-﻿using AlxCourseHomework.MaterialsAssignements;
+﻿using AlxCourseHomework;
+using AlxCourseHomework.Nowy_folder;
 
-Exercise1.RunExercise1();
-
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+Console.WriteLine("Page 12");
+Console.WriteLine("─────────────────────────────────");
+Exercise1Run.RunEx1();
+Exercise2Run.RunEx2();
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+Console.WriteLine("Page 17");
+Console.WriteLine("─────────────────────────────────");
+Exercise3Run.RunEx3();
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+Console.WriteLine("Page 19");
+Console.WriteLine("────────────────");
+Exercise4Run.RunEx4();
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+Console.WriteLine("Mailing service homework");
+Console.WriteLine("────────────────");
+Homework1Test.Run();

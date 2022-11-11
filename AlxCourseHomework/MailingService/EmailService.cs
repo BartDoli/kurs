@@ -9,27 +9,27 @@
             var subject = email.Subject;
             var messege = email.Messege;
 
-            if (from != null)
+            if (from == null)
             { 
                 from = "User not found.";
             }
 
-            if (to != null)
+            if (to == null)
             {
                 to = "User not found.";
             }
 
-            if (subject != null)
+            if (subject == null)
             {
                 subject = "Not specified.";
             }
 
-            if (messege != null)
+            if (messege == null)
             {
                 messege = "Messege not found.";
             }
 
-            Console.WriteLine($"from : {from}\n To : {to}\n Subject : {subject}\n Messege : {messege}");
+            Console.WriteLine($"from : {from}\nTo : {to}\nSubject : {subject}\nMessege : {messege}");
             Console.WriteLine("The email has been sent");
         }
     }

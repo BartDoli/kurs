@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "course alx", "szkolenie\cou
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALXCalculator", "ALXCalculator\ALXCalculator.csproj", "{FAA4CB2E-5765-4C66-805C-E728063EDB7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlxCourseHomework", "AlxCourseHomework\AlxCourseHomework.csproj", "{E56F422E-8C0D-468E-9CE7-E223F22D0F46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlxCourseHomework", "AlxCourseHomework\AlxCourseHomework.csproj", "{E56F422E-8C0D-468E-9CE7-E223F22D0F46}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
