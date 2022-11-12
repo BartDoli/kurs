@@ -1,4 +1,4 @@
-﻿namespace course_alx.Lessons
+﻿namespace course_alx.Lessons.M1.L1
 {
     internal class L1SimpleVariables
     {

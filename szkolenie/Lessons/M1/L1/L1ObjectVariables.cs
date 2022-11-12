@@ -1,11 +1,11 @@
-﻿using course_alx.Lessons.Classes;
+﻿using course_alx.Lessons.M1.L1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace course_alx.lessons
+namespace course_alx.lessons.M1.L1
 {
     public static class L1ObjectVariables
     {

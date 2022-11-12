@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace course_alx.Lessons.Classes
+namespace course_alx.Lessons.M1.L1.Classes
 {
     public class Dog
     {
