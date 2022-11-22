@@ -1,25 +1,33 @@
-﻿namespace AlxCourseHomework.MaterialsAssignements
+﻿namespace AlxCourseHomework.MaterialsAssignements.Homework1
 {
-    public class Discount{
+    public class Discount
+    {
         public int GetDiscount;
 
-        public Discount(int getDiscount){
+        public Discount(int getDiscount)
+        {
             GetDiscount = getDiscount;
         }
-        public static int IfGet(int basket){
+        public static int IfGet(int basket)
+        {
             int discount = 0;
-            if (basket > 99) {
+            if (basket > 99)
+            {
                 discount = 15;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.BackgroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Your discount is: {discount}%");
                 Console.ResetColor();
-            } else if (basket < 61) {
+            }
+            else if (basket < 61)
+            {
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.WriteLine($"No discount :(");
                 Console.ResetColor();
-            } else {
+            }
+            else
+            {
                 discount = 5;
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.BackgroundColor = ConsoleColor.Blue;
@@ -28,9 +36,11 @@
             }
             return discount;
         }
-        public static int SwitchGet(int basket){
+        public static int SwitchGet(int basket)
+        {
             int discount = 0;
-            switch (basket){
+            switch (basket)
+            {
                 case > 99:
                     discount = 15;
                     Console.ForegroundColor = ConsoleColor.White;

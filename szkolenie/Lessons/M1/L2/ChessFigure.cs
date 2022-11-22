@@ -1,6 +1,6 @@
-﻿using AFALXCourse.Lessons.M1.L2.Enums;
+﻿using course_alx.Lessons.M1.L2.Enums;
 
-namespace AFALXCourse.Lessons.M1.L2
+namespace course_alx.Lessons.M1.L2
 {
     public class ChessFigure
     {

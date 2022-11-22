@@ -1,5 +1,6 @@
-﻿using AlxCourseHomework.MaterialsAssignements.Enums;
-namespace AlxCourseHomework.MaterialsAssignements
+﻿using AlxCourseHomework.MaterialsAssignements.Homework1.Enums;
+
+namespace AlxCourseHomework.MaterialsAssignements.Homework1
 {
     public class Date
     {
