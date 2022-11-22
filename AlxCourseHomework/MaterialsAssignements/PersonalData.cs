@@ -1,4 +1,4 @@
-﻿namespace AlxCourseHomework.MaterialsAssignements.Homework1
+﻿namespace AlxCourseHomework.MaterialsAssignements
 {
     public class PersonalInfo
     {

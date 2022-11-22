@@ -1,8 +1,6 @@
-﻿using ALXCalculator.Interfaces;
-
-namespace ALXCalculator
+﻿namespace ALXCalculator
 {
-    public class Calculator : ICalculator
+    public class Calculator
     {
         List<char> ValidChars;
         char[] ValidOperatorArrays = { '+', '-', '*', '/' };

@@ -1,4 +1,4 @@
-﻿using AlxCourseHomework.MaterialsAssignements.Homework1;
+﻿using AlxCourseHomework.MaterialsAssignements;
 
 namespace AlxCourseHomework
 {

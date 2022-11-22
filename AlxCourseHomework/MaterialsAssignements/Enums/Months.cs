@@ -1,4 +1,4 @@
-﻿namespace AlxCourseHomework.MaterialsAssignements.Homework1.Enums
+﻿namespace AlxCourseHomework.MaterialsAssignements.Enums
 {
     public enum Months
     {

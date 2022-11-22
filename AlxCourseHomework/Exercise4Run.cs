@@ -1,4 +1,4 @@
-﻿using AlxCourseHomework.MaterialsAssignements.Homework1;
+﻿using AlxCourseHomework.MaterialsAssignements;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace AlxCourseHomework
 {
-    public class Exercise4Run
-    {
-        public static void RunEx4()
-        {
+    public class Exercise4Run{
+        public static void RunEx4(){
             Console.ForegroundColor = ConsoleColor.DarkGreen; Console.BackgroundColor = ConsoleColor.White;
             Console.WriteLine($"If Method");
             Console.Write("Enter total sum in basket : ");

@@ -1,4 +1,4 @@
-﻿namespace AlxCourseHomework.MaterialsAssignements.Homework1
+﻿namespace AlxCourseHomework.MaterialsAssignements
 {
     public class Maths
     {
@@ -22,7 +22,7 @@
             Console.WriteLine($"Variable a = {a}");
             Console.WriteLine($"Variable b = {b}");
             Console.WriteLine($"Variable c = {c}");
-            Console.WriteLine($"The answer is : ((a ^ b) / 2) % c = {(a ^ b) / 2 % c}");
+            Console.WriteLine($"The answer is : ((a ^ b) / 2) % c = {((a ^ b) / 2) % c}");
             Console.ResetColor();
             Console.WriteLine("─────────────────────────────────");
             Console.WriteLine("17.1b");

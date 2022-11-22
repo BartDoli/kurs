@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace course_alx.Lessons.M1.L2.Enums
+namespace AFALXCourse.Lessons.M1.L2.Enums
 {
     public enum ChessFigureType
     {
