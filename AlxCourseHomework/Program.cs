@@ -28,7 +28,25 @@ Console.WriteLine("Page 21 Ex. 2");
 Console.WriteLine("──────────────────────────────────────────────────────────────────");
 NumberDivisions.Run();
 Console.WriteLine("────────────────");
+Console.WriteLine("Page 23 Ex. 1");
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+StoreTest1.Run();
+Console.WriteLine("────────────────");
 Console.WriteLine("Page 23 Ex. 2");
 Console.WriteLine("──────────────────────────────────────────────────────────────────");
-Matrix3D.Run();
+Matrix3x3.Run();
 Console.WriteLine("────────────────");
+Console.WriteLine("Page 23 Ex. 3");
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+MultipledArray.Run();
+Console.WriteLine("────────────────");
+Console.WriteLine("Page 25 Ex. 1");
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+ShowMonths.Run1();
+Console.WriteLine("────────────────");
+Console.WriteLine("Page 25 Ex. 2");
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+ShowMonths.Run2();
+Console.WriteLine("────────────────");
+
+
