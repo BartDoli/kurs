@@ -9,7 +9,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ALXCalculator", "ALXCalcula
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlxCourseHomework", "AlxCourseHomework\AlxCourseHomework.csproj", "{E56F422E-8C0D-468E-9CE7-E223F22D0F46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonFunctinalities", "CommonFunctinalities\CommonFunctinalities.csproj", "{0320ED08-3B1D-40D1-8FB3-4A39C9774EC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonFunctinalities", "CommonFunctinalities\CommonFunctinalities.csproj", "{0320ED08-3B1D-40D1-8FB3-4A39C9774EC9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopApp", "ShopApp\ShopApp.csproj", "{A9756413-0AA0-499C-B53C-A7989F0ECAB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormApps", "FormApps", "{BB94A21A-011E-4156-B2EF-CC0CBC52B973}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HardcodedFormApp", "FormApp\HardcodedFormApp.csproj", "{E124219E-A458-4130-A11D-1248D15A34C9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CourseFormApp", "CourseFormApp\CourseFormApp.csproj", "{4468CE53-393B-464B-BB87-339125C8B6C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignements", "Assignements", "{EBD8472E-FA10-4ED3-B54F-FAE2E0EE8674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovingButton", "MovingButton\MovingButton.csproj", "{16C5A914-55EA-4813-A63B-20F9BCE87821}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +45,30 @@ Global
 		{0320ED08-3B1D-40D1-8FB3-4A39C9774EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0320ED08-3B1D-40D1-8FB3-4A39C9774EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0320ED08-3B1D-40D1-8FB3-4A39C9774EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9756413-0AA0-499C-B53C-A7989F0ECAB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9756413-0AA0-499C-B53C-A7989F0ECAB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9756413-0AA0-499C-B53C-A7989F0ECAB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9756413-0AA0-499C-B53C-A7989F0ECAB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E124219E-A458-4130-A11D-1248D15A34C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E124219E-A458-4130-A11D-1248D15A34C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E124219E-A458-4130-A11D-1248D15A34C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E124219E-A458-4130-A11D-1248D15A34C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4468CE53-393B-464B-BB87-339125C8B6C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4468CE53-393B-464B-BB87-339125C8B6C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4468CE53-393B-464B-BB87-339125C8B6C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4468CE53-393B-464B-BB87-339125C8B6C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16C5A914-55EA-4813-A63B-20F9BCE87821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16C5A914-55EA-4813-A63B-20F9BCE87821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16C5A914-55EA-4813-A63B-20F9BCE87821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16C5A914-55EA-4813-A63B-20F9BCE87821}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E124219E-A458-4130-A11D-1248D15A34C9} = {BB94A21A-011E-4156-B2EF-CC0CBC52B973}
+		{4468CE53-393B-464B-BB87-339125C8B6C6} = {BB94A21A-011E-4156-B2EF-CC0CBC52B973}
+		{16C5A914-55EA-4813-A63B-20F9BCE87821} = {EBD8472E-FA10-4ED3-B54F-FAE2E0EE8674}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F709C802-C4D8-4DB9-924E-B8B8E2087031}
