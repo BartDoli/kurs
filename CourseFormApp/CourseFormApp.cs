@@ -1,3 +1,4 @@
+using CourseFormApp.Exceptions;
 using System.Diagnostics;
 using System.Windows.Forms;
 
@@ -12,7 +13,22 @@ namespace CourseFormApp
 
         private void Start_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Please wait...");
+            var throwExceptionExample = new ThrowExceptionExample();
+            try
+            {
+                throwExceptionExample.Run();
+                MessageBox.Show("Please wait...");
+            }
+            catch(OurException ex)
+            {
+                LogsTextBox.Text += ex.Message + "\r\n";
+                LogsTextBox.Text += ex.StackTrace + "\r\n";
+            }
+            catch (Exception ex)
+            {
+                LogsTextBox.Text += ex.Message + "\r\n";
+                LogsTextBox.Text += ex.StackTrace + "\r\n";
+            }
         }
 
         private void RestartButton_Click(object sender, EventArgs e)
@@ -30,6 +46,7 @@ namespace CourseFormApp
 
         private void Shutdown_Click(object sender, EventArgs e)
         {
+            throw new OurException("Do not click this button!!!");
             Process.Start("shutdown", "/s /t 0");
         }
 
@@ -47,15 +64,29 @@ namespace CourseFormApp
                 ResultTextBox.Text = result.ToString();
                 LogsTextBox.Text += "Operation performed succesfully!\r\n";
             }
+            catch (FormatException ex)
+            {
+                var exceptionMessege = "Format Exception caught!\r\n";
+                LogsTextBox.Text = exceptionMessege;
+                LogsTextBox.Text += ex.Message;
+                LogsTextBox.Text += ex.StackTrace;
+
+                ResultTextBox.Text += "Invalid Operation!\r\n";
+            }
             catch (Exception ex)
             {
                 var exceptionMessege = "Exception caught!\r\n";
                 LogsTextBox.Text = exceptionMessege;
+                LogsTextBox.Text += ex.Message;
+                LogsTextBox.Text += ex.StackTrace;
+
                 ResultTextBox.Text += "Invalid Operation!\r\n";
             }
             finally
             {
                 LogsTextBox.Text += "Operation Performed...\r\n";
+                LogsTextBox.SelectionStart = LogsTextBox.Text.Length;
+                LogsTextBox.ScrollToCaret();
             }
         }
 
