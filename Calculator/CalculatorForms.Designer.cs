@@ -46,7 +46,6 @@
             this.DivideButton = new System.Windows.Forms.Button();
             this.SubstractButton = new System.Windows.Forms.Button();
             this.MultiplicationButton = new System.Windows.Forms.Button();
-            this.StringBuilderDemoButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // KeyButton1
@@ -54,7 +53,7 @@
             this.KeyButton1.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton1.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton1.Location = new System.Drawing.Point(12, 247);
+            this.KeyButton1.Location = new System.Drawing.Point(12, 198);
             this.KeyButton1.Name = "KeyButton1";
             this.KeyButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton1.Size = new System.Drawing.Size(60, 60);
@@ -62,14 +61,14 @@
             this.KeyButton1.Tag = "";
             this.KeyButton1.Text = "1";
             this.KeyButton1.UseVisualStyleBackColor = false;
-            this.KeyButton1.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton1.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton2
             // 
             this.KeyButton2.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton2.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton2.Location = new System.Drawing.Point(78, 247);
+            this.KeyButton2.Location = new System.Drawing.Point(78, 198);
             this.KeyButton2.Name = "KeyButton2";
             this.KeyButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton2.Size = new System.Drawing.Size(60, 60);
@@ -77,14 +76,14 @@
             this.KeyButton2.Tag = "2";
             this.KeyButton2.Text = "2";
             this.KeyButton2.UseVisualStyleBackColor = false;
-            this.KeyButton2.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton2.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton3
             // 
             this.KeyButton3.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton3.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton3.Location = new System.Drawing.Point(144, 247);
+            this.KeyButton3.Location = new System.Drawing.Point(144, 198);
             this.KeyButton3.Name = "KeyButton3";
             this.KeyButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton3.Size = new System.Drawing.Size(60, 60);
@@ -92,14 +91,14 @@
             this.KeyButton3.Tag = "3";
             this.KeyButton3.Text = "3";
             this.KeyButton3.UseVisualStyleBackColor = false;
-            this.KeyButton3.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton3.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton6
             // 
             this.KeyButton6.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton6.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton6.Location = new System.Drawing.Point(144, 181);
+            this.KeyButton6.Location = new System.Drawing.Point(144, 132);
             this.KeyButton6.Name = "KeyButton6";
             this.KeyButton6.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton6.Size = new System.Drawing.Size(60, 60);
@@ -107,14 +106,14 @@
             this.KeyButton6.Tag = "6";
             this.KeyButton6.Text = "6";
             this.KeyButton6.UseVisualStyleBackColor = false;
-            this.KeyButton6.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton6.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton5
             // 
             this.KeyButton5.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton5.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton5.Location = new System.Drawing.Point(78, 181);
+            this.KeyButton5.Location = new System.Drawing.Point(78, 132);
             this.KeyButton5.Name = "KeyButton5";
             this.KeyButton5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton5.Size = new System.Drawing.Size(60, 60);
@@ -122,14 +121,14 @@
             this.KeyButton5.Tag = "5";
             this.KeyButton5.Text = "5";
             this.KeyButton5.UseVisualStyleBackColor = false;
-            this.KeyButton5.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton5.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton4
             // 
             this.KeyButton4.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton4.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton4.Location = new System.Drawing.Point(12, 181);
+            this.KeyButton4.Location = new System.Drawing.Point(12, 132);
             this.KeyButton4.Name = "KeyButton4";
             this.KeyButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton4.Size = new System.Drawing.Size(60, 60);
@@ -137,14 +136,14 @@
             this.KeyButton4.Tag = "4";
             this.KeyButton4.Text = "4";
             this.KeyButton4.UseVisualStyleBackColor = false;
-            this.KeyButton4.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton4.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton9
             // 
             this.KeyButton9.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton9.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton9.Location = new System.Drawing.Point(144, 115);
+            this.KeyButton9.Location = new System.Drawing.Point(144, 66);
             this.KeyButton9.Name = "KeyButton9";
             this.KeyButton9.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton9.Size = new System.Drawing.Size(60, 60);
@@ -152,14 +151,14 @@
             this.KeyButton9.Tag = "9";
             this.KeyButton9.Text = "9";
             this.KeyButton9.UseVisualStyleBackColor = false;
-            this.KeyButton9.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton9.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton8
             // 
             this.KeyButton8.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton8.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton8.Location = new System.Drawing.Point(78, 115);
+            this.KeyButton8.Location = new System.Drawing.Point(78, 66);
             this.KeyButton8.Name = "KeyButton8";
             this.KeyButton8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton8.Size = new System.Drawing.Size(60, 60);
@@ -167,14 +166,14 @@
             this.KeyButton8.Tag = "8";
             this.KeyButton8.Text = "8";
             this.KeyButton8.UseVisualStyleBackColor = false;
-            this.KeyButton8.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton8.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton7
             // 
             this.KeyButton7.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton7.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton7.Location = new System.Drawing.Point(12, 115);
+            this.KeyButton7.Location = new System.Drawing.Point(12, 66);
             this.KeyButton7.Name = "KeyButton7";
             this.KeyButton7.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton7.Size = new System.Drawing.Size(60, 60);
@@ -182,28 +181,28 @@
             this.KeyButton7.Tag = "7";
             this.KeyButton7.Text = "7";
             this.KeyButton7.UseVisualStyleBackColor = false;
-            this.KeyButton7.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton7.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyButton0
             // 
             this.KeyButton0.BackColor = System.Drawing.Color.Gainsboro;
             this.KeyButton0.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KeyButton0.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.KeyButton0.Location = new System.Drawing.Point(78, 313);
+            this.KeyButton0.Location = new System.Drawing.Point(78, 264);
             this.KeyButton0.Name = "KeyButton0";
             this.KeyButton0.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyButton0.Size = new System.Drawing.Size(60, 60);
             this.KeyButton0.TabIndex = 9;
             this.KeyButton0.Text = "0";
             this.KeyButton0.UseVisualStyleBackColor = false;
-            this.KeyButton0.Click += new System.EventHandler(this.KeyButton_Click);
+            this.KeyButton0.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.Color.Gainsboro;
             this.ClearButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ClearButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ClearButton.Location = new System.Drawing.Point(12, 313);
+            this.ClearButton.Location = new System.Drawing.Point(12, 264);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ClearButton.Size = new System.Drawing.Size(60, 60);
@@ -217,35 +216,35 @@
             this.SemiButton.BackColor = System.Drawing.Color.Gainsboro;
             this.SemiButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SemiButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SemiButton.Location = new System.Drawing.Point(144, 313);
+            this.SemiButton.Location = new System.Drawing.Point(144, 264);
             this.SemiButton.Name = "SemiButton";
             this.SemiButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SemiButton.Size = new System.Drawing.Size(60, 60);
             this.SemiButton.TabIndex = 11;
             this.SemiButton.Text = ",";
             this.SemiButton.UseVisualStyleBackColor = false;
-            this.SemiButton.Click += new System.EventHandler(this.KeyButton_Click);
+            this.SemiButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.Gainsboro;
             this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.AddButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.AddButton.Location = new System.Drawing.Point(210, 115);
+            this.AddButton.Location = new System.Drawing.Point(210, 66);
             this.AddButton.Name = "AddButton";
             this.AddButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.AddButton.Size = new System.Drawing.Size(60, 60);
             this.AddButton.TabIndex = 12;
             this.AddButton.Text = "+";
             this.AddButton.UseVisualStyleBackColor = false;
-            this.AddButton.Click += new System.EventHandler(this.KeyButton_Click);
+            this.AddButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // EqualsButton
             // 
             this.EqualsButton.BackColor = System.Drawing.Color.Gainsboro;
             this.EqualsButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.EqualsButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.EqualsButton.Location = new System.Drawing.Point(276, 115);
+            this.EqualsButton.Location = new System.Drawing.Point(276, 66);
             this.EqualsButton.Name = "EqualsButton";
             this.EqualsButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.EqualsButton.Size = new System.Drawing.Size(60, 258);
@@ -264,70 +263,59 @@
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.ReadOnly = true;
             this.ResultTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.ResultTextBox.Size = new System.Drawing.Size(324, 97);
+            this.ResultTextBox.Size = new System.Drawing.Size(324, 48);
             this.ResultTextBox.TabIndex = 14;
+            this.ResultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // DivideButton
             // 
             this.DivideButton.BackColor = System.Drawing.Color.Gainsboro;
             this.DivideButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DivideButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.DivideButton.Location = new System.Drawing.Point(210, 313);
+            this.DivideButton.Location = new System.Drawing.Point(210, 264);
             this.DivideButton.Name = "DivideButton";
             this.DivideButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DivideButton.Size = new System.Drawing.Size(60, 60);
             this.DivideButton.TabIndex = 17;
-            this.DivideButton.Text = "÷";
+            this.DivideButton.Text = "/";
             this.DivideButton.UseVisualStyleBackColor = false;
-            this.DivideButton.Click += new System.EventHandler(this.KeyButton_Click);
+            this.DivideButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // SubstractButton
             // 
             this.SubstractButton.BackColor = System.Drawing.Color.Gainsboro;
             this.SubstractButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SubstractButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SubstractButton.Location = new System.Drawing.Point(210, 181);
+            this.SubstractButton.Location = new System.Drawing.Point(210, 132);
             this.SubstractButton.Name = "SubstractButton";
             this.SubstractButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.SubstractButton.Size = new System.Drawing.Size(60, 60);
             this.SubstractButton.TabIndex = 16;
             this.SubstractButton.Text = "-";
             this.SubstractButton.UseVisualStyleBackColor = false;
-            this.SubstractButton.Click += new System.EventHandler(this.KeyButton_Click);
+            this.SubstractButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // MultiplicationButton
             // 
             this.MultiplicationButton.BackColor = System.Drawing.Color.Gainsboro;
             this.MultiplicationButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MultiplicationButton.Font = new System.Drawing.Font("Segoe Script", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MultiplicationButton.Location = new System.Drawing.Point(210, 247);
+            this.MultiplicationButton.Location = new System.Drawing.Point(210, 198);
             this.MultiplicationButton.Name = "MultiplicationButton";
             this.MultiplicationButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.MultiplicationButton.Size = new System.Drawing.Size(60, 60);
             this.MultiplicationButton.TabIndex = 15;
-            this.MultiplicationButton.Text = "x";
+            this.MultiplicationButton.Text = "*";
             this.MultiplicationButton.UseVisualStyleBackColor = false;
-            this.MultiplicationButton.Click += new System.EventHandler(this.KeyButton_Click);
-            // 
-            // StringBuilderDemoButton
-            // 
-            this.StringBuilderDemoButton.BackColor = System.Drawing.Color.Gainsboro;
-            this.StringBuilderDemoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.StringBuilderDemoButton.Font = new System.Drawing.Font("Segoe Script", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.StringBuilderDemoButton.Location = new System.Drawing.Point(12, 379);
-            this.StringBuilderDemoButton.Name = "StringBuilderDemoButton";
-            this.StringBuilderDemoButton.Size = new System.Drawing.Size(324, 60);
-            this.StringBuilderDemoButton.TabIndex = 18;
-            this.StringBuilderDemoButton.Text = "String Builder Demo";
-            this.StringBuilderDemoButton.UseVisualStyleBackColor = false;
-            this.StringBuilderDemoButton.Click += new System.EventHandler(this.StringBuilderDemoButton_Click);
+            this.MultiplicationButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // CalculatorForms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 450);
-            this.Controls.Add(this.StringBuilderDemoButton);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.BackColor = System.Drawing.Color.MintCream;
+            this.ClientSize = new System.Drawing.Size(348, 332);
             this.Controls.Add(this.DivideButton);
             this.Controls.Add(this.SubstractButton);
             this.Controls.Add(this.MultiplicationButton);
@@ -346,8 +334,13 @@
             this.Controls.Add(this.KeyButton3);
             this.Controls.Add(this.KeyButton2);
             this.Controls.Add(this.KeyButton1);
+            this.MaximizeBox = false;
             this.Name = "CalculatorForms";
+            this.Opacity = 0.8D;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Calculator";
+            this.TransparencyKey = System.Drawing.Color.Transparent;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -373,6 +366,5 @@
         private Button DivideButton;
         private Button SubstractButton;
         private Button MultiplicationButton;
-        private Button StringBuilderDemoButton;
     }
 }
