@@ -19,7 +19,7 @@ using AlxCourseHomework.Nowy_folder;
 //Console.WriteLine("Mailing service homework");
 //Console.WriteLine("────────────────");
 //Homework1Test.Run();
-
+/*
 Console.WriteLine("Page 21 Ex. 1");
 Console.WriteLine("──────────────────────────────────────────────────────────────────");
 StorageTest1.Run();
@@ -48,5 +48,10 @@ Console.WriteLine("Page 25 Ex. 2");
 Console.WriteLine("──────────────────────────────────────────────────────────────────");
 ShowMonths.Run2();
 Console.WriteLine("────────────────");
-
+*/
+Console.WriteLine("────────────────");
+Console.WriteLine("Page 45 Ex. 1");
+Console.WriteLine("──────────────────────────────────────────────────────────────────");
+CarPriceCalculator.Run();
+Console.WriteLine("────────────────");
 
