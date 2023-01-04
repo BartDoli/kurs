@@ -23,7 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assignements", "Assignement
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovingButton", "MovingButton\MovingButton.csproj", "{16C5A914-55EA-4813-A63B-20F9BCE87821}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{C945788C-7F74-4653-8AD1-FE164447F7E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{C945788C-7F74-4653-8AD1-FE164447F7E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuestGreetApp", "GuestGreetApp\GuestGreetApp.csproj", "{2C812453-C1D7-4C14-8436-0D942BFE227D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{C945788C-7F74-4653-8AD1-FE164447F7E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C945788C-7F74-4653-8AD1-FE164447F7E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C945788C-7F74-4653-8AD1-FE164447F7E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C812453-C1D7-4C14-8436-0D942BFE227D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C812453-C1D7-4C14-8436-0D942BFE227D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C812453-C1D7-4C14-8436-0D942BFE227D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C812453-C1D7-4C14-8436-0D942BFE227D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

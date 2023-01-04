@@ -29,14 +29,14 @@ namespace AlxCourseHomework
                 foreach (string optionalExtra in optionalExtras)
                 {
                     int optionalExtraInt = Convert.ToInt32(optionalExtra);
-                    extrasTotal += (new double[] { 50, 100, 200, 300, 400 })[optionalExtraInt - 1];
+                    extrasTotal += (new double[] { 150, 300, 400, 900, 1200 })[optionalExtraInt - 1];
                 }
 
                 Console.WriteLine("Wprowadź cenę netto samochodu:");
                 double netPrice = Convert.ToDouble(Console.ReadLine());
 
                 const double VAT_RATE = 0.23;
-                double grossPrice = netPrice + extrasTotal + netPrice * VAT_RATE;
+                double grossPrice = ( netPrice + extrasTotal ) + (netPrice + extrasTotal) * VAT_RATE;
 
                 Console.WriteLine("Cena brutto samochodu (z uwzględnieniem VAT i dodatków): " + grossPrice);
 
