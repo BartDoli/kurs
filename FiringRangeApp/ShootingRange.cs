@@ -38,23 +38,24 @@
         public void PrintStatement()
         {
             CalculateTotalCost();
-            double vat = this.totalCost * 0.15;
+            double vat = this.totalCost * 0.23;
             double totalToPay = this.totalCost + vat;
 
-            // Create a new folder on the desktop to store the statements
+            Console.WriteLine("Total cost of all shots: " + this.totalCost);
+            Console.WriteLine("VAT (23%): " + vat);
+            Console.WriteLine("Total to pay: " + totalToPay + " PLN");
+
             string folderPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\Shooting Range Statements";
             Directory.CreateDirectory(folderPath);
 
-            // Generate a unique file name for the statement
             string fileName = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".txt";
             string filePath = folderPath + "\\" + fileName;
 
-            // Write the statement to the text file
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine("Total cost of all shots: " + this.totalCost);
-                writer.WriteLine("VAT (15%): " + vat);
-                writer.WriteLine("Total to pay: " + totalToPay);
+                writer.WriteLine("VAT (23%): " + vat);
+                writer.WriteLine("Total to pay: " + totalToPay + " PLN");
             }
         }
     }

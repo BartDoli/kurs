@@ -7,9 +7,11 @@ class Program
         ShootingRange range = new ShootingRange();
 
         // Add weapons to the shooting range
-        range.AddWeapon(new Weapon("Pistol", 10));
-        range.AddWeapon(new Weapon("Rifle", 15));
-        range.AddWeapon(new Weapon("Shotgun", 20));
+        range.AddWeapon(new Weapon("Glock", 1.5));
+        range.AddWeapon(new Weapon("Rifle", 5));
+        range.AddWeapon(new Weapon("Shotgun", 4));
+        range.AddWeapon(new Weapon("AK-47", 2.5));
+        range.AddWeapon(new Weapon("Bow", 8));
 
         bool continueEntering = true;
         while (continueEntering)
