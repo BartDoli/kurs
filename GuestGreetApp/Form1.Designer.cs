@@ -53,11 +53,12 @@
             // 
             // btnGreet
             // 
+            this.btnGreet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnGreet.Location = new System.Drawing.Point(12, 91);
             this.btnGreet.Name = "btnGreet";
             this.btnGreet.Size = new System.Drawing.Size(261, 65);
             this.btnGreet.TabIndex = 2;
-            this.btnGreet.Text = "button1";
+            this.btnGreet.Text = "Witaj!";
             this.btnGreet.UseVisualStyleBackColor = true;
             this.btnGreet.Click += new System.EventHandler(this.btnGreet_Click_1);
             // 

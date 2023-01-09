@@ -19,37 +19,44 @@ namespace GuestGreetApp
 
             if (gender == "Kobieta")
             {
-                greeting = "Dzieñ dobry Pani " + name;
+                greeting = "Dzieñ dobry Pani ";
             }
             else if (gender == "Mê¿czyzna")
             {
-                greeting = "Dzieñ dobry Pan";
+                greeting = "Dzieñ dobry Panie";
             }
             else
             {
                 greeting = "Dzieñ dobry";
             }
 
-            // Zmiana ostatniej litery imienia na odpowiedni¹ formê gramatyczn¹
             if (name.EndsWith("ek"))
             {
-                greeting += "ie " + name.Replace("ek", "ku");
+                greeting += " " + name.Replace("ek", "ku");
             }
             else if (name.EndsWith("ik"))
             {
-                greeting += "ie " + name.Replace("ik", "iku");
+                greeting += " " + name.Replace("ik", "iku");
             }
             else if (name.EndsWith("il"))
             {
-                greeting += "ie " + name.Replace("il", "ilu");
+                greeting += " " + name.Replace("il", "ilu");
             }
             else if (name.EndsWith("nek"))
             {
-                greeting += "ie " + name.Replace("nek", "nku");
+                greeting += " " + name.Replace("nek", "nku");
             }
-            else if (name.EndsWith("nka"))
+            else if (name.EndsWith("er"))
             {
-                greeting = greeting.Insert(greeting.Length - 2, "o");
+                greeting += " " + name.Replace("er", "rze");
+            }
+            else if (name.EndsWith("sz"))
+            {
+                greeting += " " + name.Replace("sz", "szu");
+            }
+            else 
+            {
+                greeting += " " + name.Replace("a", "o");
             }
             MessageBox.Show(greeting);
         }
