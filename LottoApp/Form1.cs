@@ -18,6 +18,7 @@ namespace LottoApp
             string userInput = textBox1.Text;
             string[] numStringList = numString.Split(" , ");
 
+            WinningNumbersBox.Text = num.ToString();
             if (userInput.Count() < 6)
             {
                 MessageBox.Show("Invalid Input");
@@ -38,7 +39,7 @@ namespace LottoApp
                     {
                         MessageBox.Show("The numbers do not match.");
                     }
-                    WinningNumbersBox.Text = num.ToString();
+                    
                 }
             }
         }
