@@ -1,4 +1,5 @@
 ﻿using HttpClientShowcase;
+using HttpClientShowcase.Models;
 
 Console.WriteLine("Http Client demo...\n");
 var serializationDemo = new SerializationDemo();
@@ -12,3 +13,11 @@ await httpClientDemo.GetRandomjoke();
 await httpClientDemo.GetRandomCatInfo();
 await httpClientDemo.GetRandomDogImage();
 await httpClientDemo.PredictGender("ala");
+
+var email = new Email
+{
+    To = "qq118673@gmail.com",
+    Subject = "App test.",
+    Messege = "Hello"
+};
+await httpClientDemo.SendEmail(email);
