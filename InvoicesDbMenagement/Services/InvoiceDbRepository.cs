@@ -1,5 +1,6 @@
 ﻿using InvoicesDbMenagement.Models;
 using System.Data.SqlClient;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace InvoicesDbMenagement.Services
 {
@@ -74,7 +75,13 @@ namespace InvoicesDbMenagement.Services
                     }
                 }
             }
-
+            Console.WriteLine("List of invoices:");
+            System.Collections.IList list = invoices;
+            for (int i = 0; i < list.Count; i++)
+            {
+                string invoice = list[i] as string;
+                Console.WriteLine(invoice);
+            }
             return invoices;
         }
 
