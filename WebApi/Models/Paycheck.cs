@@ -3,10 +3,9 @@
     public class Paycheck
     {
         public Guid Id { get; set; }
-        public string PayCheckNumber  { get; set; }
+        public string PaycheckNumber { get; set; }
         public decimal PaymentGross { get; set; }
-        public decimal PaycheckNet { get; set; }
+        public decimal PaymentNet { get; set; }
         public bool IsPaid { get; set; }
-        public Guid EmployeeId { get; set; }
     }
 }
