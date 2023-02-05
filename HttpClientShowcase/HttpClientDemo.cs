@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Net;
+using Activity = HttpClientShowcase.Models.Activity;
 
 namespace HttpClientShowcase
 {
@@ -93,6 +94,35 @@ namespace HttpClientShowcase
                 if (bitmap != null)
                     bitmap.Save($"{OutputFolderPath}\\{fileName}.png", ImageFormat.Png);
             }
+        }
+
+        public async Task Activity()
+        {
+            var requestUri = "https://www.boredapi.com/api/activity";
+            var response = await _httpClient.GetAsync(requestUri);
+            var responseContentJson = await response.Content.ReadAsStringAsync();
+            var activityResponse = JsonConvert.DeserializeObject<Activity>(responseContentJson);
+            Console.WriteLine($"Todays activity is: {activityResponse.activity}\nType of activity: {activityResponse.type}" +
+           $"\nParticipants: {activityResponse.participants}" + $"\nPrice is: {activityResponse.price}" + 
+           $"\nLink for activity : {activityResponse.link}" + $"\nAcces Key is here: {activityResponse.key}" + 
+           $"\nAccessibility: {activityResponse.accessibility}");
+        }
+
+        public async Task CurrentPriceResponse()
+        {
+            var requestUri = "https://api.coindesk.com/v1/bpi/currentprice.json";
+            var response = await _httpClient.GetAsync(requestUri);
+            var responseContentJson = await response.Content.ReadAsStringAsync();
+            var currentPriceResponse = JsonConvert.DeserializeObject<Bpi>(responseContentJson);
+
+            var timeStamp = JsonConvert.DeserializeObject<Time>(responseContentJson);
+            Console.WriteLine($"\nUpdated (UTC): {timeStamp.updated}" + $"\nUpdated (GMT): {timeStamp.updateduk}");
+
+            var disclaimer = JsonConvert.DeserializeObject<CurrentPrice>(responseContentJson);
+            Console.WriteLine($"\nDisclaimer: {disclaimer.disclaimer}" + $"\nChart: {disclaimer.chartName}");
+
+            Console.WriteLine("\nTodays price of diferent currencies:" + $"\nUSD: {currentPriceResponse.USD}"
+                + $"\nGBP: {currentPriceResponse.GBP}" + $"\nEURO: {currentPriceResponse.EUR}");
         }
     }
 }

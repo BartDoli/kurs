@@ -21,3 +21,9 @@ var email = new Email
     Messege = "Hello"
 };
 await httpClientDemo.SendEmail(email);
+
+await httpClientDemo.Activity();
+
+await httpClientDemo.CurrentPriceResponse();
+
+
